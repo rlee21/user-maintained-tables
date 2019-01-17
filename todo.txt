@@ -1,3 +1,4 @@
+- limit download to id, product_name and reporting_name
 - login
 - home page that shows all user-maintained tables
 - add tests

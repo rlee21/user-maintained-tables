@@ -4,9 +4,12 @@ class Product < ApplicationRecord
 
   def self.to_csv(options = {})
     CSV.generate(options) do |csv|
-      csv << column_names
+      cols = column_names
+      cols = cols - ["created_at", "updated_at"]
+      csv << cols
+      # require 'pry'; binding.pry
       all.each do |product|
-        csv << product.attributes.values_at(*column_names)
+        csv << product.attributes.values_at(*cols)
       end
     end
   end
