@@ -5,7 +5,7 @@ class Product < ApplicationRecord
   def self.to_csv(options = {})
     CSV.generate(options) do |csv|
       header = ['id', 'product_name', 'reporting_name']
-      require 'pry'; binding.pry
+      # require 'pry'; binding.pry
       csv.add_row(header)
       all.each do |product|
         values = product.attributes.values_at(*header)
