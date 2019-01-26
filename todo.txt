@@ -4,3 +4,5 @@
 - flash error messages due to validation errors (see railstutorial)
 - avvo branding (images)
 - source from select distinct inventory_type from nrt.subscription 
+- add color scheme for test results
+- update passwd hasing algorithm
