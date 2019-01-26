@@ -1,6 +1,6 @@
-- limit download to id, product_name and reporting_name
 - login
 - home page that shows all user-maintained tables
 - add tests
 - flash error messages due to validation errors (see railstutorial)
-- avvo images
+- avvo branding (images)
+- source from select distinct inventory_type from nrt.subscription 
