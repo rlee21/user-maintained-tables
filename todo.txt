@@ -1,4 +1,4 @@
-- login
+- login (only select people can signup)
 - home page that shows all user-maintained tables
 - add tests
 - flash error messages due to validation errors (see railstutorial)
@@ -6,3 +6,4 @@
 - source from select distinct inventory_type from nrt.subscription 
 - add color scheme for test results
 - update passwd hasing algorithm
+- remove require 'pry'; binding.pry in products model

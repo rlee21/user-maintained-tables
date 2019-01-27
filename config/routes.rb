@@ -3,4 +3,5 @@ Rails.application.routes.draw do
     collection { post :import }
   end
   root 'products#index'
+  resources :users
 end
