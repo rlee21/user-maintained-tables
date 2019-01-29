@@ -9,10 +9,10 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    require 'pry'; binding.pry
+    # require 'pry'; binding.pry
     if @user.save
-      # flash[:notice] = "Account was successfully created"
-      # redirect_to xxx
+      flash[:success] = "Account was successfully created"
+      redirect_to root_path
     else
       render 'new'
     end
