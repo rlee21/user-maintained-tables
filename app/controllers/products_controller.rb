@@ -9,7 +9,8 @@ class ProductsController < ApplicationController
 
   def import
     Product.import(params[:file])
-    redirect_to root_url, notice: "CSV successfully imported"
+    flash[:success] = "CSV was successfully imported"
+    redirect_to products_path
   end
 
 end
