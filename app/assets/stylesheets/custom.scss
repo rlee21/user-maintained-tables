@@ -48,7 +48,7 @@ h2 {
   letter-spacing: -1px;
   margin-bottom: 20px;
   margin-top: 40px;
-  // text-align: center;
+  text-align: center;
   font-weight: normal;
   // color: $gray-light;
 }
@@ -61,7 +61,7 @@ p {
 /* header */
 #logo {
   float: left;
-  margin-right: 10px;
+  // margin-right: 10px;
   font-size: 1.7em;
   color: #fff;
   // text-transform: uppercase;
@@ -73,9 +73,9 @@ p {
     text-decoration: none;
   }
 }
-th td {
-    white-space: nowrap;
-}
+ th td {
+     white-space: nowrap;
+ }
 
 /* forms */
 input, textarea, select, .uneditable-input {
@@ -102,4 +102,38 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+.navbar {
+  background-color: #9932CC;
+}
+
+.navbar-inverse .navbar-nav li  a {
+  padding-top: 23px;
+  color: #FFFFFF;
+}
+#search-bar {
+  padding: 6px;
+  // border: none;
+  margin-top: 15px;
+  // margin-left: 10%;
+  // margin-right: 10%;
+  font-size: 17px;
+  width: 50%;
+}
+
+.about {
+  font-size: 150%;
+}
+
+.imp-pics {
+  // display: block;
+  height: 10%;
+  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-descriptions {
+  margin-inline: 8%;
 }

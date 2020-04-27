@@ -5,7 +5,37 @@
 - avvo branding (images)
 - source from select distinct inventory_type from nrt.subscription 
 - add color scheme for test results
-- update passwd hasing algorithm
+- update passwd hashing algorithm
 - remove require 'pry'; binding.pry in products model
 - add about, contact
 - add footer partial and link about and contact
+
+#################
+# enhancements and standards
+#################
+routing (subdomain)
+requirements.yml (docker) see confluence
+cmd avvo dockerize
+mysql vs postgresql
+webbase (auth) extend controllers select users have perms
+    no signup just admins
+    see greenhouse (content admin tools)
+logging (honeybager) attorney profile hb profile
+img assets folder
+
+#################
+# deployment
+#################
+claiming port 
+    https://confluence.internetbrands.com/display/AVVO/Service+Ports
+github repo
+dockerhub (okta)
+    https://cloud.docker.com/u/avvo/repository/list
+    webhook
+see other repos for .circleci
+
+
+
+
+
+

@@ -1,10 +1,13 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
+<header class="navbar navbar-fixed-top navbar-inverse navbar-light text-muted">
   <div class="container">
-    <%= link_to "Cross-Reference Reporting Tables", root_path, id: "logo" %>
     <nav>
+    <%= link_to image_tag("logo.jpg", title: "IMP Store", border: 0, style: "height:20%; width:20%;"), root_path, id: "logo" %>
+    <%# <%= link_to "IMP Store", root_path, id: "logo" %1> %>
+      <input id="search-bar" type="text" placeholder="Search..." />
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "Signup", signup_path %></li>
+        <li><%= link_to "Home", root_path, class: "text-white" %></li>
+        <li><%= link_to "About Us", about_path, class: "text-white" %></li>
+        <li><%= link_to "Signup", signup_path, class: "text-white" %></li>
       </ul>
     </nav>
   </div>
