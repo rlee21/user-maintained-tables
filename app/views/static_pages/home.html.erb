@@ -1,18 +1,30 @@
 <div class="center jumbotron">
   <h1>Welcome to IMP Store</h1>
 </div>
-
 <h1>Products</h1>
 <div class="products">
-<div class="product-images">
-  <%= image_tag "rubber_band_pack.jpg", style: "height:15%; width:15%;margin-inline:5%;"%>
-  <%= image_tag "slim_kits.jpg", style: "height:15%; width:15%;margin-inline:5%;"%>
-  <%= image_tag "craft_kits.jpg", style: "height:15%; width:15%;margin-inline:5%;"%>
-</div>
+  <div class="product-images">
+    <a id="link" href="#" onclick="showModal()">link</a>
+    <%= link_to image_tag "rubber_band_pack.jpg", class: "product-image", style: "height:15%; width:15%;margin-inline:5%;"%> 
+    <%= link_to image_tag "slim_kits.jpg", class: "product-image", style: "height:15%; width:15%;margin-inline:5%;"%> 
+    <%= link_to image_tag "craft_kits.jpg", class: "product-image", style: "height:15%; width:15%;margin-inline:5%;"%> 
+    <%= link_to image_tag "sticker-pack.jpg", class: "product-image", style: "height:15%; width:15%;margin-inline:5%;"%> 
+    <%= link_to image_tag "tissue-pack.jpg", class: "product-image", style: "height:15%; width:15%;margin-inline:5%;"%> 
+  </div>
 
-<div class="product-descriptions">
-  <span>rubber band pack price: $3.50</span>
-  <span>slim kits price: $6.50</span>
-  <span>craft kits price: $6.50</span>
-</div>
+  <div class="product-descriptions">
+    <span>rubber band pack price: $3.50</span>
+    <%# <span>slim kits price: $6.50</span> %> <%#
+    <span>craft kits price: $6.50</span> %>
+  </div>
+
+  <!-- The Modal -->
+  <div id="product-modal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close" onclick="removeModal()">&times;</span>
+      <p>rubber band pack price: $3.50</p>
+    </div>
+  </div>
+<%= javascript_include_tag "productModal.js" %>
 </div>
