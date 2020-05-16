@@ -1,6 +1,48 @@
-<br>
-<br>
-<br>
-<br>
-<br>
-<%= @user.name %>, <%= @user.email %>
+<p id="notice"><%= notice %></p>
+
+<h1>
+  <%= "Welcome Back #{@user.first_name}!" %>
+</h1>
+
+<p>
+  <strong>First Name:</strong>
+  <%= @user.first_name %>
+</p>
+
+<p>
+  <strong>Last Name:</strong>
+  <%= @user.last_name %>
+</p>
+<p>
+
+  <strong>Billing Address:</strong>
+  <%= @user.billing_address%>
+</p>
+
+<p>
+  <strong>Shipping Address:</strong>
+  <%= @user.shipping_address%>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @user.email %>
+</p>
+
+<p>
+  <strong>Admin:</strong>
+  <%= @user.admin %>
+</p>
+
+<p>
+  <strong>Giveaway Winner:</strong>
+  <%= @user.giveaway_winner %>
+</p>
+
+<% if @user.admin %>
+  <p>
+    <%= button_to "Choose user to win Giveaway", users_path, method: :get, class: "choose-giveaway-btn" %>
+  </p>
+<% end %>
+
+<%= link_to 'Edit', edit_user_path(@user) %>

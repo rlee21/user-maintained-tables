@@ -5,8 +5,11 @@
   <%= form_for(@user, url: signup_path) do |f| %>
     <%= render 'shared/error_messages' %>
 
-    <%= f.label :name %>
-    <%= f.text_field :name, class: 'form-control' %>
+    <%= f.label :first_name %>
+    <%= f.text_field :first_name, class: 'form-control' %>
+
+    <%= f.label :last_name %>
+    <%= f.text_field :last_name, class: 'form-control' %>
 
     <%= f.label :email %>
     <%= f.email_field :email, class: 'form-control' %>
@@ -16,6 +19,12 @@
 
     <%= f.label :password_confirmation, "Confirmation" %>
     <%= f.password_field :password_confirmation, class: 'form-control' %>
+
+    <%= f.label :billing_address %>
+    <%= f.text_field :billing_address, class: 'form-control' %>
+
+    <%= f.label :shipping_address %>
+    <%= f.text_field :shipping_address, class: 'form-control' %>
 
     <%= f.submit "Create my account", class: "btn btn-primary btn-lg" %>
   <% end %>

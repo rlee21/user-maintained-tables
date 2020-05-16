@@ -5,13 +5,16 @@
   </div>
 
   <h1>Products</h1>
-
-  <div class="products">
-    <div class="product-images">
+    <div class="gallery">
       <% @products.each do |product| %>
-          <a href="#" onclick='showModal(<%="#{product.to_json}"%>)'><%= image_tag "#{product[:image]}", width: "15%", height: "15%"%></a>
-      <% end %>
+        <div class="item">
+          <a href="#" onclick='showModal(<%="#{product.to_json}"%>)'>
+            <%= image_tag "#{product[:image]}", alt: "#{product[:name]}" %>
+          </a>
+          <div class="desc"><%="#{product[:name]}"%></div>
         </div>
+      <% end %>
+    </div>
 
     <div id="product-modal" class="modal">
       <div class="modal-content">
@@ -19,7 +22,7 @@
         <p class="product-description">product description placeholder</p>
       </div>
     </div>
-    <%= javascript_include_tag "productModal.js" %>
-  </div>
+
+  <%= javascript_include_tag "productModal.js" %>
 
 </div>

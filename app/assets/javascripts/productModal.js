@@ -12,7 +12,8 @@ function updateProductDescription(product) {
     ${product.status}<br>
     Name: ${product.name}<br>
     Description: ${product.description}<br>
-    Price: ${product.price}
+    Price: ${product.price}<br>
+    <button>Add to Cart</button>
   `;
 }
 function removeModal() {
